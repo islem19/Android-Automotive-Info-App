@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2019 The Android Open Source Project
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+<resources>
+    <!--
+    Configuration for a default scrollbar for the CarUiRecyclerView. This component must inherit
+    abstract class ScrollBar. If the ScrollBar is enabled, the component will be initialized from
+    CarUiRecyclerView#createScrollBarFromConfig(). If no component is provided,
+    {@link DefaultScrollbar} class will be used.
+    -->
+    <string name="car_ui_scrollbar_component" translatable="false"/>
+    <!-- Search hint, displayed inside the search box [CHAR LIMIT=50] -->
+    <string name="car_ui_toolbar_default_search_hint">Search&#8230;</string>
+    <!-- CarUxRestrictions Utility -->
+    <string name="car_ui_ellipsis" translatable="false">&#8230;</string>
+    <!-- Content description for car ui recycler view scroll bar down arrow [CHAR LIMIT=30] -->
+    <string name="car_ui_scrollbar_page_down_button">Scroll down</string>
+    <!-- Content description for car ui recycler view scroll bar up arrow [CHAR LIMIT=30] -->
+    <string name="car_ui_scrollbar_page_up_button">Scroll up</string>
+    <!-- The content description on the toolbar back button -->
+    <string name="car_ui_toolbar_nav_icon_content_description">Back</string>
+    <!-- Title of the search menu item. Will be displayed if the button is in the overflow menu. [CHAR_LIMIT=50] -->
+    <string name="car_ui_toolbar_menu_item_search_title">Search</string>
+    <!-- Title of the settings menu item. Will be displayed if the button is in the overflow menu. [CHAR_LIMIT=50] -->
+    <string name="car_ui_toolbar_menu_item_settings_title">Settings</string>
+    <!-- Title of the overflow menu item. Only used for content descriptions. [CHAR_LIMIT=50] -->
+    <string name="car_ui_toolbar_menu_item_overflow_title">Overflow</string>
+
+    <!-- Positive option for a preference dialog. [CHAR_LIMIT=30] -->
+    <string name="car_ui_dialog_preference_positive" translatable="false">@android:string/ok
+    </string>
+    <!-- Negative option for a preference dialog. [CHAR_LIMIT=30] -->
+    <string name="car_ui_dialog_preference_negative" translatable="false">@android:string/cancel
+    </string>
+    <!-- Text to show when a preference switch is on. [CHAR_LIMIT=30] -->
+    <string name="car_ui_preference_switch_on">On</string>
+    <!-- Text to show when a preference switch is off. [CHAR_LIMIT=30] -->
+    <string name="car_ui_preference_switch_off">Off</string>
+
+    <!-- Text to show when no button is provided and a default button is used. -->
+    <string name="car_ui_alert_dialog_default_button">Close</string>
+
+    <!-- Shown at the bottom of a content limited list when user has scrolled past the limit while driving -->
+    <string name="car_ui_scrolling_limited_message">Scrolling limited while driving</string>
+
+    <!-- Shown in a toast when the user attempts to do something distracting while driving [CHAR_LIMIT=200] -->
+    <string name="car_ui_restricted_while_driving">Feature not available while driving</string>
+
+    <!-- Mostly used for GMSCore, this attribute is used to launch CarUiInstaller in a process -->
+    <!-- that can register to Application.ActivityLifecycleCallbacks. -->
+    <!-- Clients should override this value instead of changing the process name -->
+    <!-- from manifest file. -->
+    <string name="car_ui_installer_process_name" translatable="false"></string>
+
+    <!--
+    List of packages allowed to hide the content area in wide screen mode when
+    bool/car_ui_ime_wide_screen_allow_app_hide_content_area is set to false. Each package name
+    should be separated by a ",". For example, "com.package1,com.package2,com.package3" will allow
+    packages "com.package1", "com.package2" and "com.package3" to hide the content area.
+    -->
+    <string-array name="car_ui_ime_wide_screen_allowed_package_list" translatable="false">
+    </string-array>
+
+    <!-- Name of system property used to determine when wide screen mode is used. -->
+    <string name="car_ui_ime_wide_screen_system_property_name" translatable="false">
+        ro.build.automotive.ime.wide_screen.enabled
+    </string>
+</resources>

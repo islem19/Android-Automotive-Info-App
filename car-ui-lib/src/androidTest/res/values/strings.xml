@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright 2020 The Android Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<resources>
+    <string name="preferences_screen_title">Preferences</string>
+    <string name="preference_dialog_category">Dialog preferences</string>
+    <string name="title_list_preference">List preference</string>
+    <string name="dialog_title_list_preference">Choose one option!</string>
+    <string name="title_multi_list_preference">Multi-select list preference</string>
+    <string name="summary_multi_list_preference">Shows a dialog with multiple choice options</string>
+    <string name="dialog_title_multi_list_preference">Choose some options!</string>
+    <string name="preference_widgets_category">Widgets</string>
+    <string name="title_checkbox_preference">Checkbox preference</string>
+    <string name="summary_checkbox_preference">Tap anywhere in this preference to toggle state</string>
+    <string name="title_switch_preference">Switch preference</string>
+    <string name="summary_switch_preference">Tap anywhere in this preference to toggle state</string>
+    <string name="title_dropdown_preference">Dropdown preference</string>
+    <string name="title_twoaction_preference">TwoAction preference</string>
+    <string name="summary_twoaction_preference">A widget should be visible on the right</string>
+
+    <string-array name="test_string_array">
+        <item>Item 1</item>
+        <item>Item 2</item>
+        <item>Item 3</item>
+    </string-array>
+</resources>

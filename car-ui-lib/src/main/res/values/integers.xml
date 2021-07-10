@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Copyright (C) 2019 The Android Open Source Project
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+
+<resources>
+    <!-- Default max string length -->
+    <integer name="car_ui_default_max_string_length">120</integer>
+    <integer name="car_ui_scrollbar_longpress_initial_delay">1000</integer>
+    <integer name="car_ui_scrollbar_longpress_repeat_interval">100</integer>
+
+    <!-- Type of FocusHistoryCache. The values are defined in RotaryCache. 1 means the cache
+    is disabled, 2 means entries in the cache will expire after a period of time, and 3 means
+    elements in the cache will never expire. -->
+    <integer name="car_ui_focus_history_cache_type">2</integer>
+    <!-- How many milliseconds before the entry in FocusHistoryCache expires. Must be positive value
+     when car_ui_focus_history_cache_type is 2. -->
+    <integer name="car_ui_focus_history_expiration_period_ms">300000</integer>
+
+    <!-- Type of FocusAreaHistoryCache. The values are defined in RotaryCache. 1 means the
+    cache is disabled, 2 means entries in the cache will expire after a period of time, and 3 means
+    elements in the cache will never expire. -->
+    <integer name="car_ui_focus_area_history_cache_type">2</integer>
+    <!-- How many milliseconds before an entry in FocusAreaHistoryCache expires. Must be positive
+    value when car_ui_focus_area_history_cache_type is 2. -->
+    <integer name="car_ui_focus_area_history_expiration_period_ms">3000</integer>
+</resources>

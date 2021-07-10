@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright 2019 The Android Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.android.car.ui.toolbar.CarUiEditText
+        android:id="@+id/car_ui_toolbar_search_bar"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:hint="@string/car_ui_toolbar_default_search_hint"
+        android:textColorHint="@color/car_ui_toolbar_search_hint_text_color"
+        android:inputType="text"
+        android:singleLine="true"
+        android:imeOptions="actionSearch"
+        style="@style/Widget.CarUi.Toolbar.Search.EditText"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- This constraintLayout is to provide a background for the ripples to draw on, so
+         they don't get drawn underneath the EditText's background -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent">
+        <FrameLayout
+            android:layout_width="@dimen/car_ui_toolbar_search_search_icon_container_width"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+            <ImageView
+                android:id="@+id/car_ui_toolbar_search_icon"
+                android:layout_width="@dimen/car_ui_toolbar_search_search_icon_size"
+                android:layout_height="@dimen/car_ui_toolbar_search_search_icon_size"
+                android:layout_gravity="center"
+                android:src="@drawable/car_ui_toolbar_search_search_icon"
+                android:scaleType="fitXY"
+                style="@style/Widget.CarUi.Toolbar.Search.SearchIcon"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/car_ui_toolbar_search_close"
+            android:layout_width="@dimen/car_ui_toolbar_search_close_icon_container_width"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+            <ImageView
+                android:layout_width="@dimen/car_ui_toolbar_search_close_icon_size"
+                android:layout_height="@dimen/car_ui_toolbar_search_close_icon_size"
+                android:layout_gravity="center"
+                android:src="@drawable/car_ui_toolbar_search_close_icon"
+                android:scaleType="fitXY"
+                style="@style/Widget.CarUi.Toolbar.Search.CloseIcon"/>
+        </FrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</merge>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name" translatable="false">automotive</string>
+    <string name="fuel_message" translatable="false">Type: %1$s, Fuel %2$d%% Battery %3$d%%, Remaining Range: %4$d m</string>
+    <string name="fuel_level" translatable="false">%1$d mL</string>
+    <string name="battery_level" translatable="false">%1$d Wh</string>
+    <string name="outside_temperature" translatable="false">%1$d °C</string>
+    <string name="gear">Gear :</string>
+</resources>

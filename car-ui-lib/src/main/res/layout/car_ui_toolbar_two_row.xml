@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright 2019, The Android Open Source Project
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<com.android.car.ui.FocusArea
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/car_ui_toolbar_background"
+        style="@style/Widget.CarUi.Toolbar.Container">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/car_ui_toolbar_start_guideline"
+            app:layout_constraintGuide_begin="@dimen/car_ui_toolbar_start_inset"
+            android:orientation="vertical"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/car_ui_toolbar_top_guideline"
+            app:layout_constraintGuide_begin="@dimen/car_ui_toolbar_top_inset"
+            android:orientation="horizontal"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/car_ui_toolbar_end_guideline"
+            app:layout_constraintGuide_end="@dimen/car_ui_toolbar_end_inset"
+            android:orientation="vertical"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/car_ui_toolbar_bottom_guideline"
+            app:layout_constraintGuide_end="@dimen/car_ui_toolbar_bottom_inset"
+            android:orientation="horizontal"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/car_ui_toolbar_row_separator_guideline"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="@dimen/car_ui_toolbar_first_row_height"/>
+
+        <View
+            android:id="@+id/car_ui_toolbar_row_separator"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/car_ui_toolbar_separator_height"
+            style="@style/Widget.CarUi.Toolbar.SeparatorView"
+            app:layout_constraintTop_toBottomOf="@id/car_ui_toolbar_row_separator_guideline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <FrameLayout
+            android:id="@+id/car_ui_toolbar_nav_icon_container"
+            android:layout_width="@dimen/car_ui_toolbar_margin"
+            android:layout_height="0dp"
+            style="@style/Widget.CarUi.Toolbar.NavIconContainer"
+            app:layout_constraintTop_toTopOf="@id/car_ui_toolbar_top_guideline"
+            app:layout_constraintBottom_toTopOf="@id/car_ui_toolbar_row_separator"
+            app:layout_constraintStart_toStartOf="@id/car_ui_toolbar_start_guideline">
+            <ImageView
+                android:id="@+id/car_ui_toolbar_nav_icon"
+                android:layout_width="@dimen/car_ui_toolbar_nav_icon_size"
+                android:layout_height="@dimen/car_ui_toolbar_nav_icon_size"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                style="@style/Widget.CarUi.Toolbar.NavIcon"/>
+            <ImageView
+                android:id="@+id/car_ui_toolbar_logo"
+                android:layout_width="@dimen/car_ui_toolbar_logo_size"
+                android:layout_height="@dimen/car_ui_toolbar_logo_size"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/car_ui_toolbar_title_logo_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.CarUi.Toolbar.LogoContainer"
+            app:layout_constraintTop_toTopOf="@id/car_ui_toolbar_top_guideline"
+            app:layout_constraintBottom_toTopOf="@id/car_ui_toolbar_row_separator"
+            app:layout_constraintStart_toEndOf="@id/car_ui_toolbar_nav_icon_container">
+
+            <ImageView
+                android:id="@+id/car_ui_toolbar_title_logo"
+                android:layout_width="@dimen/car_ui_toolbar_logo_size"
+                android:layout_height="@dimen/car_ui_toolbar_logo_size"
+                android:scaleType="fitXY"
+                android:layout_gravity="center"
+                style="@style/Widget.CarUi.Toolbar.Logo"/>
+        </FrameLayout>
+
+        <LinearLayout android:layout_height="wrap_content"
+                      android:layout_width="0dp"
+                      android:id="@+id/car_ui_toolbar_title_container"
+                      android:orientation="vertical"
+                      android:layout_marginStart="@dimen/car_ui_toolbar_title_margin_start"
+                      app:layout_goneMarginStart="@dimen/car_ui_toolbar_title_no_logo_margin_start"
+                      app:layout_constraintTop_toTopOf="@id/car_ui_toolbar_top_guideline"
+                      app:layout_constraintBottom_toTopOf="@id/car_ui_toolbar_row_separator"
+                      app:layout_constraintStart_toEndOf="@id/car_ui_toolbar_title_logo_container"
+                      app:layout_constraintEnd_toStartOf="@id/car_ui_toolbar_menu_items_container">
+            <TextView android:id="@+id/car_ui_toolbar_title"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:singleLine="true"
+                      style="@style/Widget.CarUi.Toolbar.Title"/>
+            <TextView android:id="@+id/car_ui_toolbar_subtitle"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:visibility="gone"
+                      style="@style/Widget.CarUi.Toolbar.Subtitle"/>
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/car_ui_toolbar_search_view_container"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/car_ui_toolbar_search_height"
+            app:layout_constraintTop_toTopOf="@id/car_ui_toolbar_top_guideline"
+            app:layout_constraintBottom_toTopOf="@id/car_ui_toolbar_row_separator"
+            app:layout_constraintStart_toEndOf="@+id/car_ui_toolbar_nav_icon_container"
+            app:layout_constraintEnd_toStartOf="@+id/car_ui_toolbar_menu_items_container"/>
+
+        <LinearLayout
+            android:id="@+id/car_ui_toolbar_menu_items_container"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            style="@style/Widget.CarUi.Toolbar.MenuItem.Container"
+            app:layout_constraintTop_toTopOf="@id/car_ui_toolbar_top_guideline"
+            app:layout_constraintBottom_toTopOf="@id/car_ui_toolbar_row_separator"
+            app:layout_constraintEnd_toStartOf="@id/car_ui_toolbar_end_guideline"/>
+
+        <com.android.car.ui.toolbar.TabLayout
+            android:id="@+id/car_ui_toolbar_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/car_ui_toolbar_second_row_height"
+            app:layout_constraintTop_toBottomOf="@id/car_ui_toolbar_row_separator"
+            app:layout_constraintBottom_toTopOf="@id/car_ui_toolbar_bottom_guideline"/>
+
+        <View
+            android:id="@+id/car_ui_toolbar_bottom_styleable"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/car_ui_toolbar_bottom_view_height"
+            style="@style/Widget.CarUi.Toolbar.BottomView"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <ProgressBar
+            android:id="@+id/car_ui_toolbar_progress_bar"
+            style="@style/Widget.CarUi.Toolbar.ProgressBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@id/car_ui_toolbar_bottom_styleable"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:indeterminate="true"
+            android:visibility="gone"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.android.car.ui.FocusArea>

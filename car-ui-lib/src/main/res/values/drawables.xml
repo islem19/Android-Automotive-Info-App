@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Copyright (C) 2019 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+    <!-- General -->
+
+    <!-- Background drawable to use on full screen activities -->
+    <drawable name="car_ui_activity_background">@color/car_ui_activity_background_color</drawable>
+
+    <!-- Toolbar -->
+
+    <!-- Toolbar background color -->
+    <drawable name="car_ui_toolbar_background">#E0000000</drawable>
+    <!-- Search icon shown inside the search box in the toolbar -->
+    <drawable name="car_ui_toolbar_search_search_icon">@drawable/car_ui_icon_search</drawable>
+    <!-- Icon used for clearing the search box in toolbar -->
+    <drawable name="car_ui_toolbar_search_close_icon">@drawable/car_ui_icon_close</drawable>
+    <!-- Icon used for nav when the toolbar is in search state   -->
+    <drawable name="car_ui_icon_search_nav_icon">@drawable/car_ui_icon_arrow_back</drawable>
+
+    <!-- Preferences -->
+
+    <!-- Overlayable drawable to use for the preference chevron when preference is enabled -->
+    <item name="car_ui_preference_icon_chevron_enabled" type="drawable">@null</item>
+    <!-- Overlayable drawable to use for the preference chevron when preference is disabled -->
+    <item name="car_ui_preference_icon_chevron_disabled" type="drawable">@null</item>
+
+    <!-- IME wide screen -->
+
+    <!--  Background of the entire area other than content area which is
+          input text box and keyboard.  -->
+    <drawable name="car_ui_ime_wide_screen_background">#000</drawable>
+
+    <!--  Background of the content area.  -->
+    <drawable name="car_ui_ime_wide_screen_content_area_background">#000</drawable>
+
+    <!--  Background of the content area when there is no content.  -->
+    <drawable name="car_ui_ime_wide_screen_no_content_background">#cc000000</drawable>
+
+    <!--  Background of the input area.  -->
+    <drawable name="car_ui_ime_wide_screen_input_area_background">#000</drawable>
+
+    <!--  Tint color of input area in wide screen with error string.  -->
+    <drawable name="car_ui_ime_wide_screen_input_area_tint_error_color">#f00</drawable>
+
+    <!--  Tint color of input area in wide screen.  -->
+    <drawable name="car_ui_ime_wide_screen_input_area_tint_color">#f5f5f5</drawable>
+</resources>

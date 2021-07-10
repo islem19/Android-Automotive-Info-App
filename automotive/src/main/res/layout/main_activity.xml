@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="activity"
+            type="dz.islem.automotive.ui.main.MainActivity" />
+        <variable
+            name="viewModel"
+            type="dz.islem.automotive.ui.main.MainViewModel" />
+    </data>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="@android:color/transparent"
+        app:cardCornerRadius="5dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="@id/subGuideline">
+                <com.github.capur16.digitspeedviewlib.DigitSpeedView
+                    android:id="@+id/digit_speed_view"
+                    android:layout_width="400dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:layout_weight="0.5"
+                    app:backgroundColor="@android:color/transparent"
+                    app:disableBackgroundImage="true"
+                    app:showUnit="true"
+                    app:setSpeed="@{viewModel.speedCar}"
+                    app:speedTextColor="@color/high_fuel"
+                    app:speedTextSize="150dp"
+                    app:unit="KM/H"
+                    app:unitTextColor="@color/high_fuel"
+                    app:unitTextSize="50dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:gravity="center"
+                    android:textSize="80sp"
+                    android:textStyle="bold"
+                    android:text="@string/gear"/>
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:gravity="left|center"
+                    android:textSize="80sp"
+                    android:textStyle="bold"
+                    android:text="@{viewModel.gearSelected}"/>
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/subGuideline"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.2" />
+
+            <com.github.jorgecastillo.FillableLoader
+                android:id="@+id/fillableLoader"
+                android:layout_width="600dp"
+                android:layout_height="0dp"
+                android:layout_margin="20dp"
+                android:foregroundGravity="center"
+                android:onClick="@{() -> activity.onFuelInfoClick(viewModel.fuelLevel,viewModel.batteryLevel)}"
+                app:fl_clippingTransform="waves"
+                app:fl_fillColor="@color/high_fuel"
+                app:fl_fillDuration="5000"
+                app:fl_originalHeight="500"
+                app:fl_originalWidth="500"
+                app:fl_strokeColor="@color/white"
+                app:fl_strokeDrawingDuration="0"
+                app:fuelPercentage="@{viewModel.fuelLevel}"
+                app:batteryPercentage="@{viewModel.batteryLevel}"
+                app:layout_constraintBottom_toTopOf="@+id/guideline"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@id/subGuideline" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.8" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:padding="20dp"
+                android:weightSum="1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/guideline">
+
+                <ImageView
+                    android:id="@+id/fuel_level_icon"
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="0.5"
+                    android:src= "@{viewModel.fuelLevelLow ? @drawable/fuel_counter_on : @drawable/fuel_counter_off}"
+                    />
+
+                <ImageView
+                    android:id="@+id/fuel_door_icon"
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="0.5"
+                    android:src= "@{(viewModel.fuelDoor || viewModel.evChargePort) ? @drawable/fuel_door_open : @drawable/fuel_door_close}"
+                    />
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

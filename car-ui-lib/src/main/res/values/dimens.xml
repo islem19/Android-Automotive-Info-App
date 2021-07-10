@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2019 The Android Open Source Project
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+<resources>
+    <!-- General resources -->
+
+    <dimen name="car_ui_touch_target_size">76dp</dimen>
+    <dimen name="car_ui_touch_target_width">@dimen/car_ui_touch_target_size</dimen>
+    <dimen name="car_ui_touch_target_height">@dimen/car_ui_touch_target_size</dimen>
+
+    <dimen name="car_ui_primary_icon_size">44dp</dimen>
+
+    <!-- Horizontal margin between screen content and display border. In reference
+     implementation, this value matches the CarUiRecyclerView scrollbar width -->
+    <dimen name="car_ui_margin">112dp</dimen>
+
+    <!-- Paddings -->
+    <dimen name="car_ui_padding_0">4dp</dimen>
+    <dimen name="car_ui_padding_1">8dp</dimen>
+    <dimen name="car_ui_padding_2">16dp</dimen>
+    <dimen name="car_ui_padding_3">24dp</dimen>
+    <dimen name="car_ui_padding_4">32dp</dimen>
+    <dimen name="car_ui_padding_5">64dp</dimen>
+    <dimen name="car_ui_padding_6">96dp</dimen>
+
+    <!-- Type Sizings -->
+    <dimen name="car_ui_body1_size">32sp</dimen>
+    <dimen name="car_ui_body2_size">28sp</dimen>
+    <dimen name="car_ui_body3_size">24sp</dimen>
+    <dimen name="car_ui_sub1_size">22sp</dimen>
+    <dimen name="car_ui_sub2_size">20sp</dimen>
+    <dimen name="car_ui_sub3_size">18sp</dimen>
+
+    <!-- Tabs -->
+
+    <!-- Exact size of the tab textbox. Use @dimen/wrap_content if this must be flexible -->
+    <dimen name="car_ui_toolbar_tab_text_width">135dp</dimen>
+    <!-- Horizontal padding between tabs -->
+    <dimen name="car_ui_toolbar_tab_padding_x">12dp</dimen>
+    <!-- Tab icon width (if icons are enabled) -->
+    <dimen name="car_ui_toolbar_tab_icon_width">36dp</dimen>
+    <!-- Tab icon height (if icons are enabled) -->
+    <dimen name="car_ui_toolbar_tab_icon_height">36dp</dimen>
+
+    <!-- Toolbar -->
+
+    <!-- Default height for both toolbar rows. See car_ui_toolbar_first_row_height and
+     car_ui_toolbar_second_row_height -->
+    <dimen name="car_ui_toolbar_row_height">96dp</dimen>
+    <!-- Height of the top toolbar row. This can be customized independently. -->
+    <dimen name="car_ui_toolbar_first_row_height">@dimen/car_ui_toolbar_row_height</dimen>
+    <!-- Height of the bottom toolbar row (if the toolbar is used in two-rows mode. -->
+    <dimen name="car_ui_toolbar_second_row_height">@dimen/car_ui_toolbar_row_height</dimen>
+    <!-- Padding on the toolbar start (e.g.: distance between the container start and the start of
+    nav icon or logo) -->
+    <dimen name="car_ui_toolbar_start_inset">0dp</dimen>
+    <!-- End padding (e.g.: distance between the container end and the end of the menu items) -->
+    <dimen name="car_ui_toolbar_end_inset">0dp</dimen>
+    <!-- Top padding -->
+    <dimen name="car_ui_toolbar_top_inset">0dp</dimen>
+    <!-- Bottom padding -->
+    <dimen name="car_ui_toolbar_bottom_inset">0dp</dimen>
+    <!-- Toolbar title/tabs start margin. Toolbar navigation icon (or logo if no navigation icon is
+    used) will be centered in this space, and the title will start from here -->
+    <dimen name="car_ui_toolbar_margin">@dimen/car_ui_margin</dimen>
+    <!-- Navigation icon -->
+    <dimen name="car_ui_toolbar_nav_icon_size">@dimen/car_ui_primary_icon_size</dimen>
+    <!-- Logo -->
+    <dimen name="car_ui_toolbar_logo_size">@dimen/car_ui_primary_icon_size</dimen>
+    <!-- Margin between the logo and the title, when both logo and navigation icons are used -->
+    <dimen name="car_ui_toolbar_title_logo_padding">0dp</dimen>
+    <!-- Margin at the start of the title -->
+    <dimen name="car_ui_toolbar_title_margin_start">@dimen/car_ui_padding_2</dimen>
+    <!-- Margin at the start of the title when there is no logo present -->
+    <dimen name="car_ui_toolbar_title_no_logo_margin_start">0dp</dimen>
+    <!-- Space at the end and in between menu items -->
+    <dimen name="car_ui_toolbar_menu_item_margin">@dimen/car_ui_padding_2</dimen>
+    <!-- Ripple effect radius for icon menu items -->
+    <dimen name="car_ui_toolbar_menu_item_icon_ripple_radius">48dp</dimen>
+    <!-- Icon size for icon menu items -->
+    <dimen name="car_ui_toolbar_menu_item_icon_size">@dimen/car_ui_primary_icon_size</dimen>
+    <!-- Icon background size for icon menu items -->
+    <dimen name="car_ui_toolbar_menu_item_icon_background_size">54dp</dimen>
+    <!-- Height of the decoration view between the two rows of the toolbar (or below the toolbar
+    if this is a single row one -->
+    <!-- can't use 0dp for layout_height or the constraintlayout effect kicks in -->
+    <dimen name="car_ui_toolbar_separator_height">0.1dp</dimen>
+    <!-- Height of the decoration view below the toolbar -->
+    <!-- can't use 0dp for layout_height or the constraintlayout effect kicks in -->
+    <dimen name="car_ui_toolbar_bottom_view_height">0.1dp</dimen>
+    <!-- Height of the search box -->
+    <dimen name="car_ui_toolbar_search_height">0dp</dimen>
+    <!-- Space before the text search area, where the search icon is located -->
+    <dimen name="car_ui_toolbar_search_search_icon_container_width">@dimen/car_ui_touch_target_width</dimen>
+    <!-- Space after the text search area, where the cancel icon is located -->
+    <dimen name="car_ui_toolbar_search_close_icon_container_width">@dimen/car_ui_touch_target_width</dimen>
+    <!-- Size of the search icon inside the search box -->
+    <dimen name="car_ui_toolbar_search_search_icon_size">@dimen/car_ui_primary_icon_size</dimen>
+    <!-- Size of the close icon inside the search box -->
+    <dimen name="car_ui_toolbar_search_close_icon_size">@dimen/car_ui_primary_icon_size</dimen>
+
+    <!-- Internal artifacts. Do not overlay -->
+    <item name="wrap_content" format="integer" type="dimen">-2</item>
+
+    <!-- CarUiRecyclerView -->
+
+    <dimen name="car_ui_recyclerview_divider_height">0dp</dimen>
+    <dimen name="car_ui_recyclerview_divider_start_margin">0dp</dimen>
+    <dimen name="car_ui_recyclerview_divider_end_margin">0dp</dimen>
+    <dimen name="car_ui_recyclerview_divider_top_margin">0dp</dimen>
+    <dimen name="car_ui_recyclerview_divider_bottom_margin">0dp</dimen>
+
+    <!-- CarUiRecyclerView default scrollbar -->
+
+    <dimen name="car_ui_scrollbar_container_width">@dimen/car_ui_margin</dimen>
+    <dimen name="car_ui_scrollbar_button_size">@dimen/car_ui_touch_target_width</dimen>
+    <dimen name="car_ui_scrollbar_thumb_width">7dp</dimen>
+    <dimen name="car_ui_scrollbar_min_thumb_height">56dp</dimen>
+    <dimen name="car_ui_scrollbar_separator_margin">16dp</dimen>
+    <dimen name="car_ui_scrollbar_margin">@dimen/car_ui_margin</dimen>
+    <dimen name="car_ui_scrollbar_thumb_radius">100dp</dimen>
+
+    <item name="car_ui_button_disabled_alpha" format="float" type="dimen">0.2</item>
+    <item name="car_ui_scrollbar_milliseconds_per_inch" format="float" type="dimen">150.0</item>
+    <item name="car_ui_scrollbar_deceleration_times_divisor" format="float" type="dimen">0.45</item>
+    <item name="car_ui_scrollbar_decelerate_interpolator_factor" format="float" type="dimen">1.8</item>
+
+    <dimen name="car_ui_scrollbar_padding_top">0dp</dimen>
+    <dimen name="car_ui_scrollbar_padding_bottom">0dp</dimen>
+
+    <!-- Preferences -->
+
+    <dimen name="car_ui_divider_width">1dp</dimen>
+
+    <dimen name="car_ui_preference_content_margin_top">16dp</dimen>
+    <dimen name="car_ui_preference_content_margin_bottom">16dp</dimen>
+    <dimen name="car_ui_preference_icon_size">44dp</dimen>
+    <dimen name="car_ui_preference_icon_margin_end">16dp</dimen>
+
+    <dimen name="car_ui_preference_category_min_height">76dp</dimen>
+    <dimen name="car_ui_preference_category_icon_size">44dp</dimen>
+    <dimen name="car_ui_preference_category_icon_margin_end">16dp</dimen>
+
+    <dimen name="car_ui_preference_dropdown_padding_start">112dp</dimen>
+
+    <dimen name="car_ui_preference_edit_text_dialog_margin_top">32dp</dimen>
+    <dimen name="car_ui_preference_edit_text_dialog_margin_bottom">32dp</dimen>
+    <dimen name="car_ui_preference_edit_text_dialog_message_margin_bottom">32dp</dimen>
+    <dimen name="car_ui_preference_edit_text_dialog_message_margin_start">24dp</dimen>
+    <dimen name="car_ui_preference_edit_text_dialog_message_margin_end">24dp</dimen>
+    <dimen name="car_ui_preference_edit_text_dialog_text_margin_start">24dp</dimen>
+    <dimen name="car_ui_preference_edit_text_dialog_text_margin_end">24dp</dimen>
+
+    <!-- Alert dialog   -->
+
+    <dimen name="car_ui_dialog_edittext_height">50dp</dimen>
+    <dimen name="car_ui_dialog_edittext_margin_top">10dp</dimen>
+    <dimen name="car_ui_dialog_edittext_margin_bottom">10dp</dimen>
+    <dimen name="car_ui_dialog_edittext_margin_start">22dp</dimen>
+    <dimen name="car_ui_dialog_edittext_margin_end">22dp</dimen>
+    <dimen name="car_ui_dialog_icon_size">56dp</dimen>
+    <dimen name="car_ui_dialog_title_margin">24dp</dimen>
+
+    <!-- List item  -->
+
+    <dimen name="car_ui_list_item_height">116dp</dimen>
+    <dimen name="car_ui_list_item_header_height">76dp</dimen>
+    <dimen name="car_ui_list_item_header_start_inset">0dp</dimen>
+    <dimen name="car_ui_list_item_start_inset">0dp</dimen>
+    <dimen name="car_ui_list_item_end_inset">0dp</dimen>
+    <dimen name="car_ui_header_list_item_text_start_margin">0dp</dimen>
+    <dimen name="car_ui_list_item_text_start_margin">24dp</dimen>
+    <dimen name="car_ui_list_item_text_no_icon_start_margin">24dp</dimen>
+
+    <!-- List item icons  -->
+
+    <dimen name="car_ui_list_item_icon_size">@dimen/car_ui_primary_icon_size</dimen>
+    <dimen name="car_ui_list_item_content_icon_width">@dimen/car_ui_list_item_icon_container_width</dimen>
+    <dimen name="car_ui_list_item_content_icon_height">@dimen/car_ui_list_item_icon_container_width</dimen>
+    <dimen name="car_ui_list_item_avatar_icon_width">@dimen/car_ui_primary_icon_size</dimen>
+    <dimen name="car_ui_list_item_avatar_icon_height">@dimen/car_ui_primary_icon_size</dimen>
+    <dimen name="car_ui_list_item_supplemental_icon_size">@dimen/car_ui_primary_icon_size</dimen>
+    <dimen name="car_ui_list_item_icon_container_width">112dp</dimen>
+    <dimen name="car_ui_list_item_action_divider_width">1dp</dimen>
+    <dimen name="car_ui_list_item_action_divider_height">60dp</dimen>
+
+    <!-- List item actions  -->
+
+    <dimen name="car_ui_list_item_radio_button_height">@dimen/car_ui_list_item_height</dimen>
+    <dimen name="car_ui_list_item_radio_button_start_inset">@dimen/car_ui_list_item_start_inset</dimen>
+    <dimen name="car_ui_list_item_radio_button_end_inset">@dimen/car_ui_list_item_end_inset</dimen>
+    <dimen name="car_ui_list_item_radio_button_icon_container_width">@dimen/car_ui_list_item_icon_container_width</dimen>
+    <dimen name="car_ui_list_item_check_box_height">@dimen/car_ui_list_item_height</dimen>
+    <dimen name="car_ui_list_item_check_box_start_inset">@dimen/car_ui_list_item_start_inset</dimen>
+    <dimen name="car_ui_list_item_check_box_end_inset">@dimen/car_ui_list_item_end_inset</dimen>
+    <dimen name="car_ui_list_item_check_box_icon_container_width">@dimen/car_ui_list_item_icon_container_width</dimen>
+
+    <!-- Rotary focus highlight  -->
+
+    <dimen name="car_ui_rotary_focus_stroke_width">8dp</dimen>
+    <dimen name="car_ui_rotary_focus_pressed_stroke_width">4dp</dimen>
+
+    <!-- IME wide screen -->
+    <dimen name="car_ui_ime_wide_screen_keyboard_width">1250dp</dimen>
+    <dimen name="car_ui_ime_wide_screen_keyboard_area_padding_start">36dp</dimen>
+    <dimen name="car_ui_ime_wide_screen_keyboard_area_padding_end">36dp</dimen>
+    <dimen name="car_ui_ime_wide_screen_keyboard_area_padding_bottom">40dp</dimen>
+    <dimen name="car_ui_ime_wide_screen_input_area_height">96dp</dimen>
+    <dimen name="car_ui_ime_wide_screen_input_area_margin_top">56dp</dimen>
+    <dimen name="car_ui_ime_wide_screen_input_padding_start">36dp</dimen>
+    <dimen name="car_ui_ime_wide_screen_input_edit_text_padding_left">68dp</dimen>
+    <dimen name="car_ui_ime_wide_screen_input_edit_text_padding_right">0dp</dimen>
+    <dimen name="car_ui_ime_wide_screen_input_edit_text_size">68dp</dimen>
+    <dimen name="car_ui_ime_wide_screen_error_text_padding_start">68dp</dimen>
+    <dimen name="car_ui_ime_wide_screen_error_text_size">24dp</dimen>
+
+    <dimen name="car_ui_ime_wide_screen_divider_width">5dp</dimen>
+
+    <dimen name="car_ui_ime_wide_screen_recycler_view_padding_top">100dp</dimen>
+    <dimen name="car_ui_ime_wide_screen_description_title_margin_top">190dp</dimen>
+    <dimen name="car_ui_ime_wide_screen_description_title_padding_left">36dp</dimen>
+    <dimen name="car_ui_ime_wide_screen_description_title_text_size">44dp</dimen>
+    <dimen name="car_ui_ime_wide_screen_description_text_size">32dp</dimen>
+    <dimen name="car_ui_ime_wide_screen_description_padding_top">16dp</dimen>
+    <dimen name="car_ui_ime_wide_screen_action_button_text_size">32dp</dimen>
+    <dimen name="car_ui_ime_wide_screen_action_button_margin_bottom">40dp</dimen>
+    <dimen name="car_ui_ime_wide_screen_action_button_margin_left">36dp</dimen>
+    <dimen name="car_ui_ime_wide_screen_action_button_height">88dp</dimen>
+
+    <dimen name="car_ui_ime_wide_search_item_icon_size">116dp</dimen>
+    <dimen name="car_ui_ime_wide_search_item_title_text_size">32dp</dimen>
+    <dimen name="car_ui_ime_wide_search_item_title_padding_left">24dp</dimen>
+    <dimen name="car_ui_ime_wide_search_item_title_padding_top">22dp</dimen>
+    <dimen name="car_ui_ime_wide_search_item_sub_title_padding_left">24dp</dimen>
+    <dimen name="car_ui_ime_wide_search_item_sub_title_padding_top">22dp</dimen>
+    <dimen name="car_ui_ime_wide_search_item_sub_title_text_size">24dp</dimen>
+    <dimen name="car_ui_ime_wide_search_item_secondary_image_padding_left">36dp</dimen>
+</resources>

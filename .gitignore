@@ -1,0 +1,21 @@
+# Local configuration
+local.properties
+gradle-wrapper.properties
+
+# Gradle
+gradle/
+.gradle/
+build/
+
+# IntelliJ
+.idea/
+*.iml
+
+# Python
+*.pyc
+
+# Android studio's layout inspector captures
+captures/
+
+# A file created when launching android emulators
+read-snapshot.txt

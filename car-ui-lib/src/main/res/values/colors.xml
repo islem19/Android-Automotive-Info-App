@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Copyright (C) 2019 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+    <!-- General -->
+
+    <!-- Background color to use on full screen activities -->
+    <color name="car_ui_activity_background_color">#000000</color>
+    <!-- The ripple color. -->
+    <color name="car_ui_ripple_color">#27ffffff</color>
+
+    <!-- Toolbar -->
+
+    <!-- Color used on the navigation icon -->
+    <color name="car_ui_toolbar_nav_icon_color">@color/car_ui_text_color_primary</color>
+    <!-- Text color applied to the hint displayed inside the search box -->
+    <color name="car_ui_toolbar_search_hint_text_color">@color/car_ui_text_color_hint</color>
+    <!-- Tab selected color -->
+    <color name="car_ui_toolbar_tab_selected_color">@color/car_ui_text_color_primary</color>
+    <!-- Tab normal color -->
+    <color name="car_ui_toolbar_tab_unselected_color">@color/car_ui_text_color_secondary</color>
+
+    <!-- Recycler View  -->
+
+    <!-- Color of the scroll bar indicator in the CarUiRecyclerView. -->
+    <color name="car_ui_scrollbar_thumb">#99ffffff</color>
+    <!-- Color of the divider views between CarUiRecyclerView items -->
+    <color name="car_ui_recyclerview_divider_color">@android:color/transparent</color>
+
+    <!-- Preferences -->
+
+    <color name="car_ui_preference_icon_color">@color/car_ui_text_color_primary</color>
+    <color name="car_ui_preference_two_action_divider_color">#1fffffff</color>
+
+    <!-- Rotary focus -->
+
+    <color name="car_ui_rotary_focus_stroke_color">#94CBFF</color>
+    <color name="car_ui_rotary_focus_fill_color">#3D94CBFF</color>
+    <color name="car_ui_rotary_focus_pressed_stroke_color">#94CBFF</color>
+    <color name="car_ui_rotary_focus_pressed_fill_color">#8A94CBFF</color>
+    <color name="car_ui_rotary_focus_stroke_secondary_color">#0059B3</color>
+    <color name="car_ui_rotary_focus_fill_secondary_color">#3D0059B3</color>
+
+    <!-- IME wide screen -->
+
+    <color name="car_ui_ime_wide_screen_error_text_color">#F00</color>
+    <color name="car_ui_ime_wide_screen_divider_color">#2E3134</color>
+    <color name="car_ui_ime_wide_screen_description_title_color">#FFF</color>
+    <color name="car_ui_ime_wide_screen_description_color">#FFF</color>
+    <color name="car_ui_ime_wide_screen_search_item_title_color">#FFF</color>
+    <color name="car_ui_ime_wide_screen_search_item_sub_title_color">#FFF</color>
+</resources>

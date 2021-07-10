@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2019 The Android Open Source Project
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- TODO: for internal TODOs, expand theme/style to leaf resources as necessary -->
+    <style name="Theme.CarUi" parent="@android:style/Theme.DeviceDefault.NoActionBar">
+        <!-- TODO(b/150230923) change to true when other apps are ready -->
+        <item name="carUiBaseLayout">false</item>
+        <item name="carUiToolbar">false</item>
+
+        <!-- Attributes from: Base.V7.Theme.AppCompat -->
+
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowActionBarOverlay">false</item>
+        <item name="windowActionModeOverlay">false</item>
+        <item name="actionBarPopupTheme">@null</item>
+
+        <item name="colorBackgroundFloating">?android:attr/colorBackgroundFloating</item>
+
+        <!-- Used by MediaRouter -->
+        <item name="isLightTheme">false</item>
+
+        <item name="selectableItemBackground">?android:attr/selectableItemBackground</item>
+        <item name="selectableItemBackgroundBorderless">?android:attr/selectableItemBackgroundBorderless</item>
+        <item name="borderlessButtonStyle">?android:attr/borderlessButtonStyle</item>
+        <item name="homeAsUpIndicator">?android:attr/homeAsUpIndicator</item>
+
+        <item name="dividerVertical">?android:attr/dividerVertical</item>
+        <item name="dividerHorizontal">?android:attr/dividerHorizontal</item>
+
+        <!-- Action Bar Styles -->
+        <item name="actionBarTabStyle">?android:attr/actionBarTabStyle</item>
+        <item name="actionBarTabBarStyle">?android:attr/actionBarTabBarStyle</item>
+        <item name="actionBarTabTextStyle">?android:attr/actionBarTabTextStyle</item>
+        <item name="actionButtonStyle">?android:attr/actionButtonStyle</item>
+        <item name="actionOverflowButtonStyle">?android:attr/actionOverflowButtonStyle</item>
+        <item name="actionOverflowMenuStyle">?android:attr/actionOverflowMenuStyle</item>
+        <item name="actionBarStyle">?android:attr/actionBarStyle</item>
+        <item name="actionBarSplitStyle">?android:attr/actionBarSplitStyle</item>
+        <item name="actionBarWidgetTheme">?android:attr/actionBarWidgetTheme</item>
+        <item name="actionBarTheme">?android:attr/actionBarTheme</item>
+        <item name="actionBarSize">?android:attr/actionBarSize</item>
+        <item name="actionBarDivider">?android:attr/actionBarDivider</item>
+        <item name="actionBarItemBackground">?android:attr/actionBarItemBackground</item>
+        <item name="actionMenuTextAppearance">?android:attr/actionMenuTextAppearance</item>
+        <item name="actionMenuTextColor">?android:attr/actionMenuTextColor</item>
+
+        <!-- Dropdown Spinner Attributes -->
+        <item name="actionDropDownStyle">?android:attr/actionDropDownStyle</item>
+
+        <!-- Action Mode -->
+        <item name="actionModeStyle">?android:attr/actionModeStyle</item>
+        <item name="actionModeBackground">?android:attr/actionModeBackground</item>
+        <item name="actionModeSplitBackground">?android:attr/actionModeSplitBackground</item>
+        <item name="actionModeCloseDrawable">?android:attr/actionModeCloseDrawable</item>
+        <item name="actionModeCloseButtonStyle">?android:attr/actionModeCloseButtonStyle</item>
+
+        <item name="actionModeCutDrawable">?android:attr/actionModeCutDrawable</item>
+        <item name="actionModeCopyDrawable">?android:attr/actionModeCopyDrawable</item>
+        <item name="actionModePasteDrawable">?android:attr/actionModePasteDrawable</item>
+        <item name="actionModeSelectAllDrawable">?android:attr/actionModeSelectAllDrawable</item>
+        <item name="actionModeShareDrawable">?android:attr/actionModeShareDrawable</item>
+
+        <!-- Panel attributes -->
+        <!-- TODO: panelMenuListWidth -->
+        <item name="panelMenuListWidth">@dimen/abc_panel_menu_list_width</item>
+        <!-- TODO: panelMenuListTheme -->
+        <item name="panelMenuListTheme">@style/Theme.AppCompat.CompactMenu</item>
+        <item name="panelBackground">?android:attr/panelBackground</item>
+        <item name="listChoiceBackgroundIndicator">?android:attr/listChoiceBackgroundIndicator</item>
+
+        <!-- List attributes -->
+        <item name="textAppearanceListItem">?android:attr/textAppearanceListItem</item>
+        <item name="textAppearanceListItemSmall">?android:attr/textAppearanceListItemSmall</item>
+        <item name="textAppearanceListItemSecondary">?android:attr/textAppearanceListItemSecondary</item>
+        <item name="listPreferredItemHeight">?android:attr/listPreferredItemHeight</item>
+        <item name="listPreferredItemHeightSmall">?android:attr/listPreferredItemHeightSmall</item>
+        <item name="listPreferredItemHeightLarge">?android:attr/listPreferredItemHeightLarge</item>
+        <item name="listPreferredItemPaddingLeft">?android:attr/listPreferredItemPaddingLeft</item>
+        <item name="listPreferredItemPaddingRight">?android:attr/listPreferredItemPaddingRight</item>
+
+        <!-- Spinner styles -->
+        <item name="spinnerStyle">?android:attr/spinnerStyle</item>
+
+        <!-- Required for use of support_simple_spinner_dropdown_item.xml -->
+        <item name="spinnerDropDownItemStyle">?android:attr/spinnerDropDownItemStyle</item>
+        <item name="dropdownListPreferredItemHeight">?attr/listPreferredItemHeightSmall</item>
+
+        <!-- Popup Menu styles -->
+        <item name="popupMenuStyle">?android:attr/popupMenuStyle</item>
+        <item name="textAppearanceLargePopupMenu">?android:attr/textAppearanceLargePopupMenu</item>
+        <item name="textAppearanceSmallPopupMenu">?android:attr/textAppearanceSmallPopupMenu</item>
+        <item name="textAppearancePopupMenuHeader">?android:attr/textAppearancePopupMenuHeader</item>
+        <item name="listPopupWindowStyle">?android:attr/listPopupWindowStyle</item>
+        <item name="dropDownListViewStyle">?android:attr/dropDownListViewStyle</item>
+        <item name="listMenuViewStyle">?android:attr/listMenuViewStyle</item>
+
+        <!-- SearchView attributes -->
+        <item name="searchViewStyle">?android:attr/searchViewStyle</item>
+        <!-- TODO: textColorSearchUrl -->
+        <item name="textColorSearchUrl">@color/abc_search_url_text</item>
+        <item name="textAppearanceSearchResultTitle">?android:attr/textAppearanceSearchResultTitle</item>
+        <item name="textAppearanceSearchResultSubtitle">?android:attr/textAppearanceSearchResultSubtitle</item>
+
+        <!-- ShareActionProvider attributes -->
+        <!-- TODO: activityChooserViewStyle -->
+        <item name="activityChooserViewStyle">@style/Widget.AppCompat.ActivityChooserView</item>
+
+        <!-- Toolbar styles -->
+        <item name="toolbarStyle">?android:attr/toolbarStyle</item>
+        <!-- TODO: toolbarNavigationButtonStyle -->
+        <item name="toolbarNavigationButtonStyle">@style/Widget.AppCompat.Toolbar.Button.Navigation</item>
+
+        <item name="editTextStyle">?android:attr/editTextStyle</item>
+        <item name="editTextBackground">?android:attr/editTextBackground</item>
+        <item name="editTextColor">?android:attr/editTextColor</item>
+        <item name="autoCompleteTextViewStyle">?android:attr/autoCompleteTextViewStyle</item>
+
+        <!-- Color palette -->
+        <item name="colorPrimaryDark">?android:attr/colorPrimaryDark</item>
+        <item name="colorPrimary">?android:attr/colorPrimary</item>
+        <item name="colorAccent">?android:attr/colorAccent</item>
+
+        <item name="colorControlNormal">?android:attr/colorControlNormal</item>
+        <item name="colorControlActivated">?android:attr/colorControlActivated</item>
+        <item name="colorControlHighlight">?android:attr/colorControlHighlight</item>
+        <item name="colorButtonNormal">?android:attr/colorButtonNormal</item>
+        <!-- TODO: colorSwitchThumbNormal -->
+        <item name="colorSwitchThumbNormal">@color/switch_thumb_material_dark</item>
+        <item name="controlBackground">?attr/selectableItemBackgroundBorderless</item>
+
+        <!-- TODO: drawerArrowStyle -->
+        <item name="drawerArrowStyle">@style/Widget.AppCompat.DrawerArrowToggle</item>
+
+        <item name="checkboxStyle">?android:attr/checkboxStyle</item>
+        <item name="radioButtonStyle">?android:attr/radioButtonStyle</item>
+        <item name="switchStyle">?android:attr/switchStyle</item>
+
+        <item name="ratingBarStyle">?android:attr/ratingBarStyle</item>
+        <item name="ratingBarStyleIndicator">?android:attr/ratingBarStyleIndicator</item>
+        <item name="ratingBarStyleSmall">?android:attr/ratingBarStyleSmall</item>
+        <item name="seekBarStyle">?android:attr/seekBarStyle</item>
+
+        <!-- Button styles -->
+        <item name="android:buttonStyle">@style/Widget.CarUi.Button</item>
+        <item name="buttonStyle">?android:attr/buttonStyle</item>
+        <item name="buttonStyleSmall">?android:attr/buttonStyleSmall</item>
+
+        <item name="imageButtonStyle">?android:attr/imageButtonStyle</item>
+
+        <item name="buttonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="buttonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+        <item name="buttonBarPositiveButtonStyle">?android:attr/buttonBarPositiveButtonStyle</item>
+        <item name="buttonBarNegativeButtonStyle">?android:attr/buttonBarNegativeButtonStyle</item>
+        <item name="buttonBarNeutralButtonStyle">?android:attr/buttonBarNeutralButtonStyle</item>
+
+        <!-- Dialog attributes -->
+        <item name="dialogTheme">?android:attr/dialogTheme</item>
+        <item name="dialogPreferredPadding">?android:attr/dialogPreferredPadding</item>
+        <item name="dialogCornerRadius">?android:attr/dialogCornerRadius</item>
+
+        <item name="alertDialogTheme">?android:attr/alertDialogTheme</item>
+        <item name="alertDialogStyle">?android:attr/alertDialogStyle</item>
+        <item name="alertDialogCenterButtons">false</item>
+        <item name="textColorAlertDialogListItem">?android:attr/textColorAlertDialogListItem</item>
+        <item name="listDividerAlertDialog">?android:attr/listDividerAlertDialog</item>
+
+        <!-- Define these here; ContextThemeWrappers around themes that define them should
+             always clear these values. -->
+        <item name="windowFixedWidthMajor">@null</item>
+        <item name="windowFixedWidthMinor">@null</item>
+        <item name="windowFixedHeightMajor">@null</item>
+        <item name="windowFixedHeightMinor">@null</item>
+
+        <!-- Tooltip attributes -->
+        <!-- TODO: tooltipFrameBackground -->
+        <item name="tooltipFrameBackground">@drawable/tooltip_frame_light</item>
+        <!-- TODO: tooltipForegroundColor -->
+        <item name="tooltipForegroundColor">@color/foreground_material_light</item>
+
+        <item name="colorError">?android:attr/colorError</item>
+
+        <!-- Attributes from: Platform.AppCompat -->
+
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+
+        <item name="listChoiceIndicatorSingleAnimated">?android:attr/listChoiceIndicatorSingle</item>
+        <item name="listChoiceIndicatorMultipleAnimated">?android:attr/listChoiceIndicatorMultiple</item>
+
+        <item name="preferenceTheme">@style/CarUiPreferenceTheme</item>
+
+        <!-- Used by CarUiRecyclerView -->
+        <item name="carUiRecyclerViewStyle">@style/Widget.CarUi.CarUiRecyclerView</item>
+
+        <!-- textAppearance -->
+        <item name="android:textAppearance">@style/TextAppearance.CarUi</item>
+    </style>
+
+    <!-- TODO(b/150230923) remove this when other apps are ready -->
+    <style name="Theme.CarUi.WithToolbar">
+        <item name="carUiBaseLayout">true</item>
+        <item name="carUiToolbar">true</item>
+        <item name="preferenceTheme">@style/CarUiPreferenceTheme.WithToolbar</item>
+    </style>
+
+    <style name="Theme.CarUi.NoToolbar">
+        <item name="carUiBaseLayout">true</item>
+        <item name="carUiToolbar">false</item>
+    </style>
+
+    <style name="CarUiPreferenceTheme">
+        <item name="checkBoxPreferenceStyle">@style/Preference.CarUi.CheckBoxPreference</item>
+        <item name="dialogPreferenceStyle">@style/Preference.CarUi.DialogPreference</item>
+        <item name="dropdownPreferenceStyle">@style/Preference.CarUi.DropDown</item>
+        <item name="editTextPreferenceStyle">@style/Preference.CarUi.DialogPreference.EditTextPreference</item>
+        <item name="preferenceCategoryStyle">@style/Preference.CarUi.Category</item>
+        <item name="preferenceFragmentCompatStyle">@style/PreferenceFragment.CarUi</item>
+        <item name="preferenceFragmentListStyle">@style/PreferenceFragmentList.CarUi</item>
+        <item name="preferenceFragmentStyle">@style/PreferenceFragment.CarUi</item>
+        <item name="preferenceScreenStyle">@style/Preference.CarUi.PreferenceScreen</item>
+        <item name="preferenceStyle">@style/Preference.CarUi</item>
+        <item name="seekBarPreferenceStyle">@style/Preference.CarUi.SeekBarPreference</item>
+        <item name="switchPreferenceStyle">@style/Preference.CarUi.SwitchPreference</item>
+    </style>
+
+    <!-- TODO(b/150230923) remove this when other apps are ready -->
+    <style name="CarUiPreferenceTheme.WithToolbar">
+        <item name="preferenceFragmentCompatStyle">@style/PreferenceFragment.CarUi.WithToolbar</item>
+        <item name="preferenceFragmentStyle">@style/PreferenceFragment.CarUi.WithToolbar</item>
+    </style>
+
+</resources>

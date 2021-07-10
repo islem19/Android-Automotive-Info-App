@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (C) 2020 Google Inc.
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+         http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.android.car.ui.test">
+    <application android:debuggable="true" android:theme="@style/Theme.CarUi.NoToolbar">
+        <uses-library android:name="android.test.runner" />
+        <activity android:name="com.android.car.ui.TestActivity" />
+        <activity android:name="com.android.car.ui.recyclerview.CarUiRecyclerViewTestActivity" />
+        <activity android:name="com.android.car.ui.imewidescreen.CarUiImeWideScreenTestActivity" />
+        <activity android:name="com.android.car.ui.FocusAreaTestActivity" />
+        <activity android:name="com.android.car.ui.FocusParkingViewTestActivity" />
+        <activity android:name="com.android.car.ui.preference.PreferenceTestActivity" />
+        <activity
+            android:name="com.android.car.ui.preference.NonFullscreenPreferenceFragmentTest$MyActivity"
+            android:theme="@style/Theme.CarUi.WithToolbar"/>
+        <activity android:name="com.android.car.ui.utils.ViewUtilsTestActivity" />
+        <activity
+            android:name="com.android.car.ui.toolbar.ToolbarTestActivity"
+            android:theme="@style/Theme.CarUi.WithToolbar"/>
+    </application>
+    <instrumentation android:name="androidx.test.runner.AndroidJUnitRunner"
+        android:targetPackage="com.android.car.ui.test"
+        android:label="Chassis Test Cases">
+    </instrumentation>
+</manifest>

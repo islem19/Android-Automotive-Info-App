@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  Copyright (C) 2019 The Android Open Source Project
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+ -->
+
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="car_ui_toolbar_default_search_hint" msgid="8339474149462104372">"Поиск…"</string>
+    <string name="car_ui_scrollbar_page_down_button" msgid="746830252244551947">"Прокрутить вниз"</string>
+    <string name="car_ui_scrollbar_page_up_button" msgid="965431866383176249">"Прокрутить вверх"</string>
+    <string name="car_ui_toolbar_nav_icon_content_description" msgid="6116610935599234725">"Назад"</string>
+    <string name="car_ui_toolbar_menu_item_search_title" msgid="2988075382498202155">"Поиск"</string>
+    <string name="car_ui_toolbar_menu_item_settings_title" msgid="5206858558664840197">"Настройки"</string>
+    <string name="car_ui_toolbar_menu_item_overflow_title" msgid="9132512843297732890">"Дополнительное меню"</string>
+    <string name="car_ui_preference_switch_on" msgid="2091385466752081649">"Включено"</string>
+    <string name="car_ui_preference_switch_off" msgid="511096411523593697">"Выключено"</string>
+    <string name="car_ui_alert_dialog_default_button" msgid="399078418913970003">"Закрыть"</string>
+    <string name="car_ui_scrolling_limited_message" msgid="5978003166159186378">"Функция прокручивания ограничена во время вождения."</string>
+    <string name="car_ui_restricted_while_driving" msgid="7490306547860308268">"Функция недоступна во время вождения."</string>
+</resources>

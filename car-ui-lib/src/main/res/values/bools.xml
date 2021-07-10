@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2019 The Android Open Source Project
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+
+<resources>
+    <!-- Toolbar -->
+
+    <!-- Whether tabs should use flex layout or not -->
+    <bool name="car_ui_toolbar_tab_flexible_layout">false</bool>
+    <!-- Whether the space for nav icon should be reserved, even if the nav icon is not visible -->
+    <bool name="car_ui_toolbar_nav_icon_reserve_space">true</bool>
+    <!-- Whether the logo (if provided) should be used in place of the nav icon when nav icon is
+         not visible -->
+    <bool name="car_ui_toolbar_logo_fills_nav_icon_space">true</bool>
+    <!-- Whether logo should be displayed. If set to false, logo won't be shown even if provided -->
+    <bool name="car_ui_toolbar_show_logo">true</bool>
+    <!-- Whether tabs should be displayed on a second row, or they should be placed in the first
+         row, replacing the title -->
+    <bool name="car_ui_toolbar_tabs_on_second_row">false</bool>
+
+    <bool name="car_ui_toolbar_menuitem_individual_click_listeners">false</bool>
+
+    <!-- CarUiRecyclerView -->
+
+    <!-- Whether to display the Scroll Bar or not. Defaults to true. If this is set to false,
+         the CarUiRecyclerView will behave exactly like the RecyclerView. -->
+    <bool name="car_ui_scrollbar_enable">true</bool>
+
+    <!-- Preferences -->
+
+    <!-- Whether list, edit, dropdown and intent preferences should show a chevron or not -->
+    <bool name="car_ui_preference_show_chevron">false</bool>
+    <!-- whether list preference should be shown in full screen or as a dialog -->
+    <bool name="car_ui_preference_list_show_full_screen">true</bool>
+
+    <!-- List items -->
+
+    <bool name="car_ui_list_item_single_line_title">true</bool>
+
+    <!-- FocusArea -->
+
+    <!-- Whether to draw highlight (car_ui_focus_area_foreground_highlight) on top of the FocusArea
+         and its children when the FocusArea's descendant gets focused. -->
+    <bool name="car_ui_enable_focus_area_foreground_highlight">false</bool>
+    <!-- Whether to draw highlight (car_ui_focus_area_background_highlight) on top of the FocusArea
+         but behind its children when the FocusArea's descendant gets focused. -->
+    <bool name="car_ui_enable_focus_area_background_highlight">false</bool>
+    <!-- Whether to focus on the app:defaultFocus view when nudging to the FocusArea, even if there
+         was another view focused in the FocusArea. -->
+    <bool name="car_ui_focus_area_default_focus_overrides_history">true</bool>
+    <!-- Whether to clear FocusArea history when the user rotates the rotary controller. -->
+    <bool name="car_ui_clear_focus_area_history_when_rotating">true</bool>
+
+    <!--  Whether to log the escrow components check automatically for all the activities or not.  -->
+    <bool name="car_ui_escrow_check_components_automatically">false</bool>
+
+    <!-- If there is no positive/negative/neutral button, should we add one that says "dismiss"? -->
+    <bool name="car_ui_alert_dialog_force_dismiss_button">true</bool>
+    <!-- Whether or not to allow application to hide the content area in IME wide screen.  -->
+    <bool name="car_ui_ime_wide_screen_allow_app_hide_content_area">true</bool>
+
+    <!-- Whether IME is aligned left or not(which means its on right). This value will be used by
+         the applications not using car-ui-lib components and are hiding the content area. -->
+    <bool name="car_ui_ime_wide_screen_aligned_left">true</bool>
+</resources>

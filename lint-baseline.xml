@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="5" by="lint 4.1.0" client="cli" variant="all" version="4.1.0">
+
+    <issue
+        id="NewApi"
+        message="Call requires API level R (current min is 28): `android.view.SurfaceView#getHostToken`"
+        errorLine1="        IBinder hostToken = mContentAreaSurfaceView.getHostToken();"
+        errorLine2="                                                    ~~~~~~~~~~~~">
+        <location
+            file="packages/apps/Car/libs/car-ui-lib/car-ui-lib/src/main/java/com/android/car/ui/imewidescreen/CarUiImeWideScreenController.java"
+            line="551"
+            column="53"/>
+    </issue>
+
+    <issue
+        id="NewApi"
+        message="Call requires API level R (current min is 28): `android.view.SurfaceControlViewHost#release`"
+        errorLine1="            mSurfaceControlViewHost.release();"
+        errorLine2="                                    ~~~~~~~">
+        <location
+            file="packages/apps/Car/libs/car-ui-lib/car-ui-lib/src/main/java/com/android/car/ui/toolbar/SearchView.java"
+            line="211"
+            column="37"/>
+    </issue>
+
+</issues>
